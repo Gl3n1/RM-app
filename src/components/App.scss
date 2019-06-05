@@ -1,0 +1,173 @@
+p {
+  font-size: 12px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h2 {
+  margin: 20px 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+section {
+  padding: 15px;
+}
+
+.navbar {
+  padding: 15px;
+  color: #fff;
+  padding-bottom: 80px;
+  border-radius: 0 0 30px 30px;
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .active {
+    font-size: 15px;
+    font-weight: bold;
+    &:after {
+      position: relative;
+      display: block;
+      content: '';
+      height: 3px;
+      width: 15px;
+      background:#fff;
+      left: 28%;
+      margin-top: 5px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.red-bg {
+  background: #E6636D;
+}
+
+.top-card {
+  height: 91px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 8px 5px rgba(178,178,178,0.11);
+  padding: 10px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
+  h3 {
+    color:#4B4B4B;
+    margin: 0;
+  }
+
+  span {
+    font-size: 10px;
+    color: #ADADAD;
+  }
+}
+
+.card-full {
+  padding-right: 54%;
+}
+
+.col-2 {
+  width: 43%;
+}
+
+.number {
+  font-size: 30px;
+  color: #4B4B4B;
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+.cases {
+
+  span {
+    font-size: 25px;
+    color: #4B4B4B;
+  }
+}
+
+.card-full {
+  img {
+    margin-left: 20px;
+    margin-right: 17px;
+  }
+
+  h3 {
+    color: #ADADAD;
+  }
+
+  .rightIcon {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.title {
+  color: #535353;
+}
+
+.top-news-card {
+  h4 {
+    font-size: 14px;
+    margin: 5px;
+    margin-left: 0;
+  }
+
+  .link {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    color: #7C7F81;
+    text-decoration: none;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #535353;
+    font-size: 12px;
+
+    span {
+      font-size: 12px;
+      color: #71767B;
+      padding-right: 10px;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    overflow: hidden;
+    height: auto;
+    max-height: 135px;
+  }
+  
+  .content {
+    width: 60%;
+    padding: 10px;
+  }
+}
+
+.card-image {
+  padding: 0;
+}
