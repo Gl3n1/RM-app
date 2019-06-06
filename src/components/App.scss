@@ -25,6 +25,8 @@ h3 {
 
 section {
   padding: 15px;
+  position: relative;
+  top: -70px;
 }
 
 .App {
@@ -211,4 +213,69 @@ section {
   .active {
     color: #E6636D;
   }
+}
+
+.professional-card {
+  padding: 0;
+  color: #4B4B4B;
+
+  img {
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+
+  .top {
+    padding: 15px;
+  }
+
+  .bottom {
+    padding: 15px;
+    padding-top: 5px;
+  }
+
+  .otherImg {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .row {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #535353;
+  }
+
+  .position {
+    color: #8F8F8F;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .postTime {
+    font-size: 10px;
+    font-weight: 500;
+    color: #8F8F8F;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .link {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+.emptySpace {
+  height: 61px;
 }
