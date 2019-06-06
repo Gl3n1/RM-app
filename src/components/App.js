@@ -6,6 +6,8 @@ import ScheduleCard from './Cards/ScheduleCard/index.jsx';
 import BirthdayCard from './Cards/BirthdayCard/index.jsx';
 import FollowUpCard from './Cards/FollowUpCard/index.jsx';
 import TopNewsCard from './Cards/TopNewsCard/index.jsx';
+import ShowMoreCard from './Cards/ShowMoreCard/index.jsx';
+import BottomNavbar from './BottomNavbar';
 
 import hsbcimg from '../images/s3-news.jpg'
 import hsbcimg2 from '../images/0.jpeg'
@@ -46,10 +48,12 @@ function App() {
             desc='As you traverse the city, you may not always notice the multi-faceted shapes of the KL metropolis.'
             img={hsbcimg2}
           />
+          <ShowMoreCard />
       </section>
       <section>
         <h2 className='title'>Professional</h2>
       </section>
+      <BottomNavbar />
     </div>
   );
 }
