@@ -1,4 +1,6 @@
 import React from 'react'
+import defaultProfileImage from '../../../images/defaultprofile.png'
+
 
 const ProfessionalCard = (props) => {
     const hasImage = () => {
@@ -20,7 +22,7 @@ const ProfessionalCard = (props) => {
             <div className='card professional-card'>
                 <div className='top'>
                     <div className='row'>
-                        <img src={props.profileImg} alt="mily"/>
+                        <img src={props.profileImg ? props.profileImg : defaultProfileImage} alt="mily"/>
                         <div>
                             <p className='name'>{props.name}</p>
                             <p className='position'>{props.position}</p>

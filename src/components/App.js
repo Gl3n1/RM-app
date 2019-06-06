@@ -9,13 +9,14 @@ import TopNewsCard from './Cards/TopNewsCard/index.jsx';
 import ShowMoreCard from './Cards/ShowMoreCard/index.jsx';
 import BottomNavbar from './BottomNavbar';
 import ProfessionalCard from './Cards/ProfessionalCard/index.jsx';
-import EmptySpace from './Empty'
 
 import hsbcimg from '../images/s3-news.jpg';
 import hsbcimg2 from '../images/0.jpeg';
 import property from '../images/property.jpg';
 import mily from '../images/g.jpeg';
 import milyimg from '../images/mily1.png';
+import Aditya from '../images/Aditya.jpeg';
+import Adityaimg from '../images/adityaimg.jpeg';
 
 function App() {
   return (
@@ -58,6 +59,17 @@ function App() {
       <section>
         <h2 className='title'>Professional</h2>
         <ProfessionalCard 
+          link='https://www.linkedin.com/feed/update/activity:6539106732319350784/'
+          name='Aditya Tuli'
+          position='Technology and Innovation Director. Running startup bootcamps, accelerators, and impact programmes.'
+          postTime='3d'
+          desc='Inviting all social innovators and social entrepreneurs to apply for this. You could be an aspiring entrepreneur, marketing expert, designer, or developer...'
+          profileImg={Aditya}
+          img={Adityaimg}
+          imgDesc='MaGIC Social Entrepreneurship (SE) Bootcamp is currently open for application.'
+        />
+        <ProfessionalCard 
+          link='https://www.linkedin.com/feed/update/activity:6527024284886503424/'
           name='Mily Liang'
           position='Head of Customer Value Management at HSBC Retail Banking and Wealth Management'
           postTime='1mo'
@@ -65,8 +77,15 @@ function App() {
           profileImg={mily}
           img={milyimg}
           imgDesc='We are currently seeking for a subject matter expert in change delivery to lead...'
-          link='https://www.linkedin.com/feed/update/activity:6527024284886503424/'
         />
+        <ProfessionalCard 
+          link='https://www.linkedin.com/in/tara-latini-1990025/detail/recent-activity/shares/'
+          name='Tara Latini'
+          position='Successful Business Transformation Leader & Passionate Advocate of the Customer Experience'
+          postTime='1w'
+          desc='Great ideas are born from great environments where the appetite for change exist.'
+        />
+        <ShowMoreCard />
       </section>
       <BottomNavbar />
     </div>
