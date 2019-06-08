@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../Navbar';
 import ProfileCard from '../Cards/ProfileCard/index.jsx';
 import NotesApp from '../NotesApp'
+import UpdatesCard from '../Cards/UpdatesCard/index.jsx'
+import UpdatesBirthdayCard from '../Cards/UpdatesBirthdayCard/index.jsx';
 
 const ProfilePage = props => {
     return ( 
@@ -19,6 +21,9 @@ const ProfilePage = props => {
                 <NotesApp 
                     name={props.location.state.name}
                 />
+                <h2 className='title'>Updates</h2>
+                <UpdatesCard />
+                <UpdatesBirthdayCard />
             </section>
         </div>
      );

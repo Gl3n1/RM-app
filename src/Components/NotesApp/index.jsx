@@ -48,7 +48,8 @@ const NotesApp = props => {
     const removeNote = index => {
         const newNote = [...notes];
         newNote.splice(index,1);
-        changeNotes(newNote)
+        changeNotes(newNote);
+        localStorage.setItem(props.name, JSON.stringify(notes));
     }
 
     const handleSubmit = () => {
@@ -86,18 +87,21 @@ const NotesApp = props => {
     }
 
     const handleClick = () => {
-        localStorage.setItem(props.name, JSON.stringify(notes));
 
         isEditing && value.title === '' ? changeIsEditing(false) : changeIsEditing(true);
 
         handleSubmit();
+
+        localStorage.setItem(props.name, JSON.stringify(notes));
     }
 
     useEffect(()=> {
         const fetchData = async () => {
             const data = await JSON.parse(localStorage.getItem(props.name));
 
-            changeNotes(data);
+            if(localStorage.getItem(props.name)) {
+                changeNotes(data);
+            }
         }
         fetchData()
     },[])

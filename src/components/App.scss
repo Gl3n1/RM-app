@@ -496,3 +496,56 @@ section {
     margin-bottom: 15px;
   }
 }
+
+.updatescard {
+  padding: 15px;
+
+  .row {
+    justify-content: flex-end;
+
+    :nth-child(2) {
+      border: 1px solid #E6636D;
+      border-radius: 5px;
+      background-color: #E6636D;
+      padding: 10px 30px;
+      color: #fff;
+      margin-left: 15px;
+    }
+  }
+
+  .title {
+    color: #4B4B4B;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .desc {
+    color: #535353;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+.birthday {
+  background: linear-gradient(135deg, #97ABFF 0%, #123597 100%);
+
+  .title {
+    font-size: 20px;
+  }
+
+  p {
+    color: #fff !important;
+  }
+  
+  .desc {
+    margin-bottom: 28px;
+  }
+
+  .row {
+    :nth-child(2) {
+      background-color: #5B78C8;
+      border: none;
+    }
+  }
+}
