@@ -1,10 +1,11 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const ShowMoreCard = () => {
     return ( 
-        <div className='card row'>
+        <Link to='/showMorePage' className='card row showmore'>
             <p className='bold'>Show more</p>
-        </div>
+        </Link>
      );
 }
  

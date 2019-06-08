@@ -4,7 +4,7 @@ import rightIcon from '../../../images/right.png';
 
 const FollowUpCard = () => {
     return ( 
-        <div className='card row col-2 card-full top-card'>
+        <div className='card row card-full top-card'>
             <img width='40px' height='40px' src={followUpImg} alt="calenderimg"/>
                 <div>
                     <h3>Follow-up</h3>

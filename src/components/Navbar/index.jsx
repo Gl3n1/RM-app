@@ -23,6 +23,15 @@ const Navbar = (props) => {
                     </Link>
                 </div>
             )
+        case 'topnews':
+            return (
+                <div className='navbar red-bg'>
+                    <Link to='/' className='row back'>
+                        <img src={right} alt="right"/>
+                        <h2>Top News</h2>
+                    </Link>
+                </div>
+            )    
         default:
         return (
             <div className='navbar red-bg'>
