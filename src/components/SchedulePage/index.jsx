@@ -11,19 +11,22 @@ const SchedulePage = () => {
         <div>
             <Navbar page='Schedule' />
             <section>
-                <ScheduleCard2 
+                <ScheduleCard2
+                    name='Mily Liang'
                     desc='Open bank account'
                     time='9:00 AM'
                     location='Ampang starbucks'
                     img={mily}
                 />
-                <ScheduleCard2 
+                <ScheduleCard2
+                    name='Bikesh Lakhmichand'
                     desc='Lunch appointment'
                     time='11:00 AM'
                     location='Pavilion'
                     img={bikesh}
                 />
-                <ScheduleCard2 
+                <ScheduleCard2
+                    name='Aditya Tuli'
                     desc='Financial report'
                     time='4:00 PM'
                     location='HSBC KL Branch'

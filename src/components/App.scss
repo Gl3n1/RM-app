@@ -393,3 +393,106 @@ section {
 .showmore {
   color: #333333;
 }
+
+.profilecard {
+  padding: 20px;
+  max-height: 210px;
+
+  &>* {
+    top: -60px;
+    position: relative;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7px
+  }
+
+  .desc {
+    font-size: 14px;
+    color: #4B4B4B;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    color: #E0E0E0;
+    margin-bottom: 20px;
+  }
+
+  ol {
+    padding-left: 15px;
+  }
+
+  .row {
+    justify-content: flex-start;
+    font-size: 12px;
+
+    :nth-child(1) {
+      min-width: 150px;
+    }
+
+    :nth-child(2) {
+      color: #333333;
+    }
+  }
+}
+
+.profile-title {
+  margin-top: 40px;
+}
+
+.notesCard {
+  padding: 15px;
+  position: relative;
+
+  img {
+    border-radius: 100%;
+    position: absolute;
+    right: 15px;
+    bottom: -22px;
+    height: 48px;
+    width: 48px;
+  }
+
+  .note {
+    :nth-child(1) {
+      color: #4B4B4B;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  
+    :nth-child(2) {
+      color: #535353;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .edit {
+    width: 100%;
+    margin-bottom: 15px;
+
+    input {
+      padding:5px;
+      width: 100%;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box; 
+    }
+  }
+
+  hr {
+    margin-bottom: 15px;
+  }
+}

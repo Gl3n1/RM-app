@@ -31,7 +31,15 @@ const Navbar = (props) => {
                         <h2>Top News</h2>
                     </Link>
                 </div>
-            )    
+            )
+        case 'profile':
+            return (
+                <div className='navbar red-bg'>
+                    <Link to='/Schedulepage' className='row back'>
+                        <img src={right} alt="right"/>
+                    </Link>
+                </div>
+            )        
         default:
         return (
             <div className='navbar red-bg'>
